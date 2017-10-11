@@ -1,6 +1,6 @@
 # CS510 CW 7
 
-**Author(s):** **CHANGME**
+**Author(s):** **Maksym Solodovskyi & Chris Watkins**
 
 [![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-07-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-07-YOURNAME)
 
@@ -44,4 +44,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Maksym Solodovskyi & Chris Watkins**

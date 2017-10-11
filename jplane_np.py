@@ -21,7 +21,7 @@ def julia(c):
     Returns:
         f: Function
     """
-    def f(z, m = 100):
+    def f(z, m = 100): 
         """Function that takes a complex number and iterates 
            it until the condition abs(z) >=2 is reached.
         
@@ -156,5 +156,6 @@ class JuliaPlane(ArrayComplexPlane):
             self.plane = np.loadtxt("plane.csv", delimiter = ',', dtype = 'int') #Read plane from plane.csv file 
            
     def show(self):
-        plt.imshow(self.plane, cmap= plt.cm.hot , interpolation = 'bicubic')
-        
+        plt.imshow(self.plane, interpolation = 'bicubic', extent = (self.xmin,self.xmax,self.ymin,self.ymax) )
+        plt.text(0,1.5, self.c, fontsize = 20, color = 'white')
+        plt.text(-0.5,1.5, 'c =', fontsize = 20, color = 'white')
