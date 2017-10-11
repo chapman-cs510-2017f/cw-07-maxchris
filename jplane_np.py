@@ -9,6 +9,7 @@
 
 import csv
 import numpy as np
+import matplotlib.pyplot as plt
 from cplane_np import ArrayComplexPlane
 
 def julia(c):
@@ -20,7 +21,7 @@ def julia(c):
     Returns:
         f: Function
     """
-    def f(z, m = 1000):
+    def f(z, m = 100):
         """Function that takes a complex number and iterates 
            it until the condition abs(z) >=2 is reached.
         
@@ -36,7 +37,7 @@ def julia(c):
             n = 1
             while abs(z) < 2:
                 n += 1
-                if n > m:
+                if n > 100:
                     return 0
                 else:
                     z = z**2 + c
@@ -153,3 +154,7 @@ class JuliaPlane(ArrayComplexPlane):
             self.ylen = int(param[6][0])
             self.fs = np.vectorize(param[7][0])
             self.plane = np.loadtxt("plane.csv", delimiter = ',', dtype = 'int') #Read plane from plane.csv file 
+           
+    def show(self):
+        plt.imshow(self.plane, cmap= plt.cm.hot , interpolation = 'bicubic')
+        
