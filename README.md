@@ -31,9 +31,7 @@
 
 ## Assessment
 
-Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
-
-**CHANGEME**
+The most useful part of this assignment was plotting the JuliaPlane. The result was a great, unexpected surprise! All of the steps we took make sense now that we got the final product. 
 
 ## Honor Pledge
 
