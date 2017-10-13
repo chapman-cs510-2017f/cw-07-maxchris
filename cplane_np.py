@@ -52,7 +52,7 @@ class ArrayComplexPlane(AbsComplexPlane):
         self.fs = []    
         r = np.linspace(self.xmin, self.xmax,self.xlen)
         q = np.linspace(self.ymin, self.ymax, self.ylen)
-        x,y = np.meshgrid(r,q,)
+        x,y = np.meshgrid(r,q)
         self.plane = x+y*1j
         return self.plane
        
